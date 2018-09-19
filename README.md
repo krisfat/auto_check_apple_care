@@ -1,0 +1,2 @@
+# auto_check_apple_care
+自动在苹果官网查询剩余保修的日期
