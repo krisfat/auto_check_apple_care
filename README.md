@@ -26,7 +26,7 @@ def get_html():
    nums = wait.until(EC.presence_of_element_located((By.ID, 'serial-number')))
    result = wait.until(EC.presence_of_element_located((By.ID, 'captcha-input')))
    search = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, 'button-label')))
-   nums.send_keys('DMPT7A2YHP9X')
+   nums.send_keys('您的苹果产品的验证码')
    img_src = html.xpath('//img[@class="captcha-image"][1]/@src')[0][23:]
    password = Chaojiying_Client('超级鹰账户', '超级鹰密码', '软件的soft_id')
    imgdata = base64.b64decode(img_src)
